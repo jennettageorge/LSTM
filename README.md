@@ -1,2 +1,5 @@
-# LSTM
-LSTM model for Data Science Project
+# Multivariate Time Series Analysis using LSTM
+
+## Summarization of Findings:
+
+The business problem being solved in this project is that Royal Caribbean wants to cut down on energy consumption, and factors such as indoor and outdoor temperature and humidity, as well as other weather factors, play a large role in energy consumption (as a lot of energy goes into regulating temperature inside a ship). Thus we set out to predict energy consumption based on a multivariate time series with 24 features. In order to do so, we will leverage the computing powers of a Long-Short-Term Memory neural network. LSTM was a great choice for this problem because, unlike classic linear regression models, it handles multivariate timeseries data very well. I initially tried a VAR and VARMA model on the data but found that it was not as robust as LSTM, so I put that aside for the time being. I used the RMSE score of testing and training data as a main indicator of success in the models. The models with unaggregated data and hourly aggregated data were the best performers, and they consistantly had lower RMSE scores, with very similar testing and training scores, indicating that there is not significant over or under fitting.
